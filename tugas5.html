@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+              nav a {
+                @apply text-nav hover:text-black font-raleway;
+              }
+    
+              nav a.active {
+                @apply text-black;
+              }
+    
+              .button-primary {
+                @apply bg-primary py-[12px] px-[30px] text-white rounded-full hover:bg-secondary;
+              }
+    
+              .text-gradient {
+                background: linear-gradient(90.01deg, #E18700 35.24%, #FF32AD 66.21%, #0EC5D7 97.18%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+              }
+              
+            }
+        </style>
+</head>
+<body>
+    <header class="bg-header">
+        <section class="container mx-auto">
+            <section id="topbar" class="flex justify-between gap-10 items-center py-5">
+                <div id="left-side" class="flex gap-10 items-center">
+                    <img src="logo.svg" alt="">
+                    <nav>
+                        <ul class="flex gap-10 items-center">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right-side" class="flex items-center gap-10">
+                    <button type="">
+                        <img src="search.svg" alt="">
+                    </button>
+                    <a href="#get-started" class="button-primary">Get Started</a>
+                </div>
+            </section>
+        </section>
+        <section id="hero" class="flex flex-col gap-5">
+            <div class="max-w-[700px] mx-auto mt-[100px]">
+                <div class="action mx-auto flex justify-center items-center gap-10">
+                    <p class="text-center text-cyan-300 py-2 px-5 rounded-full bg-primary bg-sky-100">Develoment Website</p>
+                </div>
+                <h1 class="text-2xl lg:text-4xl xl:text-5xl text-center font-nunito font-bold">It's Fun To Build a Website With The <span class="text-gradient">Mangcoding Team</span></h1>
+                <p class="text-center py-5">
+                    The Mangcoding team will help build a website for your company with quality and guaranteed services, with custom templates you can create a website as you like.
+                </p>
+                </div>
+                <div class="action mx-auto flex justify-center items-center gap-10">
+                    <a href="#get-started" class="button-primary">Get Started</a>
+                    <a href="#" class="underline flex items-center gap-5 hover:no-underline">Explore our blog <img src="./arrow-right.svg"alt=""></a>
+                </div>
+            <img src="Gadget.png" alt="" class="mx-auto">
+            
+        </section>
+        <section id="brand" class=" flex flex-col items-center gap-5">
+            <div class="max-w-[700px] mx auto mt-[100px]">
+                <p class="text-xl text-gray-500 mx-auto flex justify-center">Brand That Trust Us:</p>
+            </div>
+            <div id="logobrand" class="h-18 flex justify-center gap-5 pb-20">
+                <img src="blechmal.png" alt="">
+                <img src="ceriakid.png" alt="">
+                <img src="JFX.png">
+                <img src="pizza.png">
+                <img src="rata.png" alt="">
+                <img src="plantgardenia.png" alt="">
+
+            </div>
+        </section>
+        
+    </header>
+    <section id="service" class="bg-gradient-to-br from-cyan-500 via-pink-500 to-orange-500">
+        <div class="container mx-auto text-white py-20 justify-between items-center gap-10">
+            <h1 class="font-bold text-3xl">Service Our<br>Mangcoding Team</h1>
+            <div class="flex justify-between">
+                <p class="py-5">Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, <br>på trekavis.
+                    Makrona
+                    tregät plang. Bekässade
+                    kast, eftersom sore.</p>
+                <a href="#" class="flex bg-white text-orange-500 rounded-full h-10 py-2 px-5 items-center text-xl">Build
+                    Website</a>
+            </div>
+            <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-2 gap-5 ">
+                <div class="border-solid border-2 border-white-500 rounded-lg">
+                    <div class="flex flex-col items-center gap-5 py-10 text-center">
+                        <img src="shopify.png">
+                        <h1 class="font-bold text-2xl">Shopify Theme Development</h1>
+                        <p>Start from 700 USD for project base or<br> 35 USD per hour</p>
+                    </div>
+                </div>
+                <div class="border-solid border-2 border-white-500 rounded-lg">
+                    <div class="flex flex-col items-center gap-5 py-10 text-center">
+                        <img src="php.png">
+                        <h1 class="font-bold text-2xl">Web Application Development</h1>
+                        <p>Start from 700 USD for project base or<br> 35 USD per hour</p>
+                    </div>
+                </div>
+                <div class="row-span-2 border-solid border-2 border-white-500 rounded-lg">
+                    <div class="flex flex-col items-center gap-5 py-10 text-center">
+                        <img src="asisstans.png">
+                        <h1 class="font-bold text-2xl">Assistans Services</h1>
+                        <p>Start from 700 USD for project base or<br> 35 USD per hour</p>
+                        <p> More Services </p>
+                        <p class="font-bold">Technical Assistans</p>
+                        <p class="font-bold">Support Assistans</p>
+                        <p class="font-bold">VIP Assistans</p>
+                        <p class="font-bold">Social Media Admin</p>
+                    </div>
+                </div>
+                <div class="border-solid border-2 border-white-500 rounded-lg">
+                    <div class="flex flex-col items-center gap-5 py-10 text-center">
+                        <img src="wordpress.png">
+                        <h1 class="font-bold text-2xl">WordPress Theme Development</h1>
+                        <p>Start from 700 USD for project base or<br> 35 USD per hour</p>
+                    </div>
+                </div>
+                <div class="border-solid border-2 border-white-500 rounded-lg">
+                    <div class="flex flex-col items-center gap-5 py-10 text-center text-white">
+                        <img src="www.png">
+                        <h1 class="font-bold text-2xl">Custom App/ Plugins Development</h1>
+                        <p>Start from 700 USD for project base or<br> 35 USD per hour
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skiil" class="text-center font-raleway">
+        <h1 class="font-bold pt-20 text-4xl ">What We Do</h1>
+        <p class="p-10 text-gray-500">Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, <br>på trekavis. Makrona tregät plang. Bekässade
+        kast, eftersom sore.</p>
+        <div class="container mx-auto">
+            <div class="grid grid-flow-row-dense grid-cols-7 grid-rows-2 gap-5">
+                <div class="">
+                    <img src="design.svg" width="200" alt="">
+                    <h1 class="font-bold text-xl">Design</h1>
+                    <p class="pt-5">Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+                </div>
+                <div class="pt-20">
+                    <img src="vektor1.svg" alt="">
+                </div>
+                <div class="pt-40">
+                    <img src="frontend.svg" width="200" alt="">
+                    <h1 class="font-bold text-xl">Front-end</h1>
+                    <p class="pt-5">Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+                </div>
+                <div class="pt-20">
+                    <img src="vektor2.svg" alt="">
+                </div>
+                <div>
+                    <img src="backend.svg" width="200" alt="">
+                    <h1 class="font-bold text-xl">Back-end</h1>
+                    <p class="pt-5">Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+                </div>
+                <div class="pt-20">
+                    <img src="vektor1.svg" alt="">
+                </div>
+                <div class="pt-40">
+                    <img src="checktes.svg" width="200" alt="">
+                    <h1 class="font-bold text-xl">Check Test</h1>
+                    <p class="pt-5">Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="text-center font-raleway">
+        <h1 class="font-bold text-4xl ">Our Work</h1>
+        <p class="p-10 text-gray-500">Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora,</p>
+        <div class="container mx-auto">
+            <div class="grid grid-flow-row-dense grid-cols-2 grid-rows-2 gap-5">
+                <div class="flex flex-col justify-between text-left gap-5">
+                    <img src="retainer.svg" alt="">
+                    <h1 class="font-bold text-2xl">Retainer Orely Studio</h1>
+                    <a href="#">https://retainer.orely.co/</a>
+                    <div class="flex flex-row gap-5">
+                        <button class="border-2 border-white-500 border-solid" type="input">WordPress</button>
+                        <button class="border-2 border-white-500 border-solid" type="input">Taillwind</button>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between text-left gap-5">
+                    <img src="sagata.svg" alt="">
+                    <h1 class="font-bold text-2xl">Beacukai Sangatta</h1>
+                    <a href="#">https://bcsangatta.beacukai.go.id/</a>
+                    <div class="flex flex-row gap-5">
+                        <button class="border-2 border-white-500 border-solid" type="input">WordPress</button>
+                        <button class="border-2 border-white-500 border-solid" type="input">Taillwind</button>
+                        <button class="border-2 border-white-500 border-solid" type="input">Design</button>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between text-left gap-5">
+                    <img src="federasi.svg" alt="">
+                    <h1 class="font-bold text-2xl">Federasi Ice Skating Indonesia</h1>
+                    <a href="#">https://fisid.org/</a>
+                    <div class="flex flex-row gap-5">
+                        <button class="border-2 border-white-500 border-solid" type="input">WordPress</button>
+                        <button class="border-2 border-white-500 border-solid" type="input">Taillwind</button>
+                        <button class="border-2 border-white-500 border-solid" type="input">Design</button>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between text-left gap-5">
+                    <img src="retainer.svg" alt="">
+                    <h1 class="font-bold text-2xl">Retainer Orely Studio</h1>
+                    <a href="#">https://retainer.orely.co/</a>
+                    <div class="flex flex-row gap-5">
+                        <button class="border-2 border-white-500 border-solid" type="input">WordPress</button>
+                        <button class="border-2 border-white-500 border-solid" type="input">Taillwind</button>
+                    </div>
+                </div>
+            </div>
+            <div class="action mx-auto flex justify-center items-center gap-10 p-20">
+                <a href="#" class="button-primary">Our Work</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
